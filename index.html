@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compactible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vamshi Achavelli</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/33fb5a070b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <img src="images/logo1.png" class="logo" />
+      <ul id="sidemenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#start_certification">Certifications</a></li>
+        <li><a href="#start_services">Services</a></li>
+        <li><a href="#start_portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header">
+      <div class="container">
+        <div class="header-text">
+          <h3>Python Developer</h3>
+          <h1>I'm <span>Vamshi Achavelli</span></h1>
+          <p>
+            "Elevating web experiences through innovative <br />design and
+            flawless functionality."
+          </p>
+        </div>
+        <div class="badges">
+          <div class="badge-container">
+            <div
+              data-iframe-width="150"
+              data-iframe-height="270"
+              data-share-badge-id="ed32eec1-7816-4a74-a701-6cf5c0a79b40"
+              data-share-badge-host="https://www.credly.com"
+            ></div>
+            <script
+              type="text/javascript"
+              async
+              src="//cdn.credly.com/assets/utilities/embed.js"
+            ></script>
+            <div
+              data-iframe-width="150"
+              data-iframe-height="270"
+              data-share-badge-id="0097eb26-36a9-45f1-873a-c1c23a261c23"
+              data-share-badge-host="https://www.credly.com"
+            ></div>
+            <script
+              type="text/javascript"
+              async
+              src="//cdn.credly.com/assets/utilities/embed.js"
+            ></script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------about-------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/vam.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm Vamshi Achavelli, Python developer with around 3 years of
+              experience. I'm specialize in designing, developing, testing, and
+              maintaining web applications using Python, Django, and the Flask.
+              One of my strengths is building dynamic web applications, and I'm
+              well-versed in Python-based frameworks such as Django and Flask. I
+              have experience integrating front-end technologies like React JS
+              and React Native to create responsive and user-friendly
+              interfaces.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages:</span> &nbsp; Python, SQL, Java,
+                  PHP, C#, C, C++
+                </li>
+                <li>
+                  <span>Web Technologies:</span> &nbsp; HTML5, CSS3, JSON, Rest
+                  API, Bootstrap, JQuery, AJAX, React JS, JavaScript, XML
+                </li>
+                <li>
+                  <span>Web Frameworks:</span> &nbsp; Django, Flask, Angular,
+                  React, Express, Node JS, Laravel
+                </li>
+                <li>
+                  <span>Python Libraries:</span> &nbsp; NumPy, SciPy,
+                  Matplotlib, Pandas, SOAP
+                </li>
+                <li>
+                  <span>Database:</span> &nbsp; MySQL, SQLite, Mongo DB, Oracle,
+                  Casandra, PostgreSQL
+                </li>
+                <li>
+                  <span>Operating System:</span> &nbsp; Windows, Linux, and Mac
+                </li>
+                <li>
+                  <span>Cloud Platforms:</span> &nbsp; AWS (EC2, ECS, S3, Cloud
+                  Formation, Redshift, SQS, Terraform), Google cloud platform.
+                </li>
+                <li>
+                  <span>Methodologies:</span> &nbsp; Agile, SCRUM, Waterfall,
+                  TDD
+                </li>
+                <li>
+                  <span>Big Data Tools & Others:</span> &nbsp; IRA, Ansible,
+                  Eclipse, Jupyter, IntelliJ, Vs code, Apache spark, Apache
+                  Kafka
+                </li>
+                <li>
+                  <span>Version Control Systems:</span> &nbsp; Git, GitHub, SVN
+                </li>
+                <li>
+                  <span>Deployment Tools:</span> &nbsp; Jenkins, PyCharm,
+                  Docker, Kubernetes
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Uber:</span><br />2023 to Current</li>
+                <li><span>Adani:</span><br />2020 to 2021</li>
+                <li><span>Neebla Technologies:</span><br />2019 to 2020</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>The University of Texas at Arlington</span><br />2022 to
+                  2023
+                </li>
+                <li>
+                  <span>Lovely Professional University</span><br />2017 to 2021
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="start_certification"></div>
+      </div>
+    </div>
+    <!----------Certificates---------->
+    <div id="certifications">
+      <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="certification-list">
+          <!-- Certification 1: AWS Certified Developer Associate -->
+          <div class="certification">
+            <div class="left">
+              <a
+                href="images/Certificates/AWS Certified Developer - Associate certificate.pdf"
+                target="_blank"
+              >
+                <img
+                  src="images/Certificates/AWS_Vamshi.png"
+                  alt="AWS Certified Developer Associate"
+                  class="certificate-img"
+                />
+              </a>
+            </div>
+            <div class="right">
+              <div class="details">
+                <h3>AWS Certified Developer Associate</h3>
+                <p>
+                  <strong>Organization:</strong> Amazon Web Services (AWS)
+                  <br />
+                  <strong>Validity:</strong> November 16, 2026
+                  <br />
+                  <strong>Validation number:</strong> MQ9JJZ0C0E1QQNSP
+                  <br />
+                  <a
+                    href="https://www.credly.com/badges/ed32eec1-7816-4a74-a701-6cf5c0a79b40/public_url"
+                    target="_blank"
+                    >Click to Verify</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 2: Meta Backend Django -->
+          <div class="certification">
+            <div class="left">
+              <a
+                href="images/Certificates/Coursera PWWRITRWZWFH.pdf"
+                target="_blank"
+              >
+                <img
+                  src="images/Certificates/Meta_Vamshi.png"
+                  alt="Meta Backend Django"
+                  class="certificate-img"
+                />
+              </a>
+            </div>
+            <div class="right">
+              <div class="details">
+                <h3>Meta Back-End Developer</h3>
+                <p>
+                  <strong>Organization:</strong> Meta Coursera
+                  <br />
+                  <strong>Validity:</strong> Lifetime
+                  <br />
+                  <a
+                    href="https://coursera.org/share/0467a4dc9ef638c2cc54fb7d5c182702"
+                    target="_blank"
+                    >Click to Verify
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="start_services"></div>
+      </div>
+    </div>
+    <!----------Services-------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-wrapper">
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>"Responsive web design that looks great on any device."</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-server"></i>
+              <h2>Backend Development and API Integration</h2>
+              <p>"Delivering powerful backend solutions."</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-cloud"></i>
+              <h2>Database Management</h2>
+              <p>
+                "Assisting in storage, organization, and retrieval of data."
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-cogs"></i>
+              <h2>System Integration</h2>
+              <p>"Building seamless connections between systems."</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-mobile-alt"></i>
+              <h2>Mobile App Development</h2>
+              <p>"Creating user-friendly mobile applications."</p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div id="start_portfolio"></div>
+      </div>
+    </div>
+    <!-----------Portfolio----------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work11.jpeg" />
+            <div class="layer">
+              <h3>Market Place for Students</h3>
+              <p>
+                This web site lets students buys, sell and rent things among
+                students, teachers giving access to professors to monitor the
+                website professors have acess to remove or delet user in groups
+                and resctrict permently.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work2.png" />
+            <div class="layer">
+              <h3>driver drowsiness detection</h3>
+              <p>
+                Driver drowsiness detection is a car safety technology which
+                helps prevent accidents caused by the driver getting drowsy.
+                Various studies have suggested that around 20% of all road
+                accidents are fatigue-related, up to 50% on certain roads.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work3.jpeg" />
+            <div class="layer">
+              <h3>identification of phenomena using CNN</h3>
+              <p>
+                Pneumonia is an infection in the lungs, occurring either in the
+                left or right or both lungs at the same time, The study to
+                detect pneumonia using neural networks and compare their
+                results.papers with the same data set Chest X-ray are studied.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <!------------------contact----------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=vachavelli@gmail.com&su=Portfolio&body="
+                target="_blank"
+                >vachavelli@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-brands fa-linkedin"></i>
+              <a
+                href="https://www.linkedin.com/in/vamshi-achavelli/"
+                target="_blank"
+                >vamshi-achavelli</a
+              >
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 817-366-7396</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="images/Vamshi_Achavelli_CV.docx" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Vamshi. Created with
+          <i class="fa-brands fa-html5"> </i>
+          <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i>
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemen = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemen.style.right = "0";
+      }
+      function closemenu() {
+        sidemen.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzDPFOLVB7f1MzCFLnSzEN5oo27_llcMRXrWWMD47JrhPIicQp-HdhWxsKq0R0JeSOP/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Sucessfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const servicesList = document.querySelector(".services-list");
+        const cards = servicesList.children;
+        const clone = [...cards].map((card) => card.cloneNode(true)); // Clone all cards
+        clone.forEach((card) => servicesList.appendChild(card)); // Append clones
+      });
+    </script>
+  </body>
+</html>
