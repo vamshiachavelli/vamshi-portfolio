@@ -1,17 +1,20 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: #080808;
     color: #fff;
 }
-#header{
+
+#header {
     width: 100%;
     height: 100vh;
     background-image: url(images/IMG_6870.JPG);
@@ -19,11 +22,12 @@ body{
     background-position: center;
 }
 
-.container{
+.container {
     padding: 20px 4%;
     overflow: visible;
-} 
-nav{
+}
+
+nav {
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -32,8 +36,10 @@ nav{
     position: -webkit-sticky;
     position: sticky;
     top: 13px;
-    background-color: rgba(71, 67, 67, 0.905); /* Adjust the background color and opacity as needed */
-    z-index: 1000; /* Ensure the navbar stays on top of other content */
+    background-color: rgba(71, 67, 67, 0.905);
+    /* Adjust the background color and opacity as needed */
+    z-index: 1000;
+    /* Ensure the navbar stays on top of other content */
     padding: 3px 1%;
     border-radius: 50px;
     box-sizing: border-box;
@@ -41,23 +47,29 @@ nav{
     margin: auto;
 }
 
-.logo{
-    max-height: 50px; /* Adjust as needed */
+.logo {
+    max-height: 50px;
+    /* Adjust as needed */
     margin: 10px;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
+    justify-content: flex-end;
+    /* Align items to the right */
     align-items: center;
-    flex-grow: 1; /* Take up the remaining space */
+    flex-grow: 1;
+    /* Take up the remaining space */
 }
-nav ul li{
+
+nav ul li {
     margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -65,7 +77,8 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: "";
     width: 0%;
     height: 3px;
@@ -75,58 +88,71 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
-.header-text{
+
+.header-text {
     margin-top: 20px;
     font-size: 30px;
 }
-.header-text h1{
+
+.header-text h1 {
     margin-top: 20px;
     font-size: 60px;
 }
-.header-text h1 span{
+
+.header-text h1 span {
     color: #ff004f;
 }
+
 /* --------about-------- */
-#about{
+#about {
     padding: 80px 0;
     color: #ababab;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
+
+.about-col-1 {
     flex-basis: 35%;
 }
-.about-col-1 img{
+
+.about-col-1 img {
     width: 100%;
     border-radius: 15px;
 }
-.about-col-2{
+
+.about-col-2 {
     flex-basis: 60%;
 }
-.sub-title{
+
+.sub-title {
     margin-bottom: 20px;
     font-size: 60px;
     font-weight: 600;
     color: #fff;
 }
-.tab-titles{
+
+.tab-titles {
     display: flex;
     margin: 20px 0 40px;
 }
-.tab-links{
+
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
-.tab-links::after{
+
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -136,158 +162,172 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.5s;
 }
-.tab-links.active-link::after{
+
+.tab-links.active-link::after {
     width: 60%;
 }
-.tab-contents ul li{
+
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
-.tab-contents ul li span{
+
+.tab-contents ul li span {
     color: #fd2973;
     font-size: 14px;
 }
-.tab-contents{
+
+.tab-contents {
     display: none;
 }
-.tab-contents.active-tab{
+
+.tab-contents.active-tab {
     display: block;
 }
 
 .badge-container {
-  position: absolute;        /* Absolute positioning */
-  bottom: 50px;              /* Leave some space from the bottom */
-  right: 50px;               /* Leave some space from the right */
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-  background: rgba(255, 255, 255, 0.6); /* Transparent white background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  backdrop-filter: blur(50px);            /* Glass effect */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for edges */
-  padding: 20px;                          /* Space around the content */
-  border-radius: 15px;                    /* Smooth rounded corners */
+    position: absolute;
+    /* Absolute positioning */
+    bottom: 50px;
+    /* Leave some space from the bottom */
+    right: 50px;
+    /* Leave some space from the right */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    /* Transparent white background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    backdrop-filter: blur(50px);
+    /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Light border for edges */
+    padding: 20px;
+    /* Space around the content */
+    border-radius: 15px;
+    /* Smooth rounded corners */
 }
 
 
 /* --------------------Certification-------------*/
 
 .certification-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px; /* Space between certifications */
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* Space between certifications */
+    justify-content: center;
 }
 
 .certification {
-  display: flex;
-  flex: 1 1 45%; /* Flex properties to make the certifications responsive */
-  max-width: 50%;
-  background-color: #262626; /* Set the background color */
-  border: none;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
+    display: flex;
+    flex: 1 1 45%;
+    /* Flex properties to make the certifications responsive */
+    max-width: 50%;
+    background-color: #262626;
+    /* Set the background color */
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
 }
 
 .certification-inner {
-  display: flex;
-  width: 100%;
-  align-items: stretch; /* Ensures both sides stretch equally */
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    /* Ensures both sides stretch equally */
 }
 
 
 .left {
-  width: 50%;
-  padding: 0; /* Ensures no gaps in padding */
-  background-color: #262626; /* Set the background color */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 50%;
+    padding: 0;
+    /* Ensures no gaps in padding */
+    background-color: #262626;
+    /* Set the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .left img {
-  max-width: 100%;
-  max-height: 100%; /* Ensures images don't overflow */
-  border-radius: 5px;
-  object-fit: cover; /* Adjusts image fit */
-  margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    /* Ensures images don't overflow */
+    border-radius: 5px;
+    object-fit: cover;
+    /* Adjusts image fit */
+    margin: 0;
 }
 
 .right {
-  width: 50%;
-  padding: 20px;
+    width: 50%;
+    padding: 20px;
 }
 
 .details h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .details p {
-  font-size: 1rem;
-  line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .details a {
-  color: #007bff;
-  text-decoration: none;
+    color: #007bff;
+    text-decoration: none;
 }
 
 .details a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-.btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  margin-top: 20px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
 
 @media screen and (max-width: 768px) {
-  .certification {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
+    .certification {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 
-  .left, .right {
-    width: 100%;
-    padding: 10px;
-  }
+    .left,
+    .right {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 /* --------------------Servies-------------*/
-#services{
+#services {
     padding: 50px 0;
 }
 
 .services-wrapper {
-    overflow: hidden; /* Hide overflow to create the sliding effect */
-    width: 100%; /* Full width */
+    overflow: hidden;
+    /* Hide overflow to create the sliding effect */
+    width: 100%;
+    /* Full width */
     position: relative;
 }
 
 .services-list {
     display: flex;
-    animation: scrollServices 15s linear infinite; /* Smooth scroll animation */
-    animation-play-state: running; /* Ensure animation runs by default */
+    animation: scrollServices 15s linear infinite;
+    /* Smooth scroll animation */
+    animation-play-state: running;
+    /* Ensure animation runs by default */
     margin-top: 50px;
 
 }
 
 .services-list:hover {
-    animation-play-state: paused; /* Pause the animation on hover */
+    animation-play-state: paused;
+    /* Pause the animation on hover */
 }
 
 .services-list div {
@@ -296,13 +336,17 @@ nav ul li a:hover::after{
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    flex: 0 0 33.3333%; /* Each card takes up 1/3 of the container */
-    margin-right: 20px; /* Space between cards */
-    transition: background 0.5s, transform 0.5s; /* Smooth hover effect */
+    flex: 0 0 33.3333%;
+    /* Each card takes up 1/3 of the container */
+    margin-right: 20px;
+    /* Space between cards */
+    transition: background 0.5s, transform 0.5s;
+    /* Smooth hover effect */
 }
 
 .services-list div:last-child {
-    margin-right: 0; /* Remove margin for the last card */
+    margin-right: 0;
+    /* Remove margin for the last card */
 }
 
 .services-list div:hover {
@@ -333,44 +377,64 @@ nav ul li a:hover::after{
 .services-list::after {
     content: '';
     display: flex;
-    flex: 0 0 33.3333%; /* Set to the same size as the cards */
+    flex: 0 0 33.3333%;
+    /* Set to the same size as the cards */
 }
 
 @keyframes scrollServices {
     from {
-        transform: translateX(0); /* Start position */
+        transform: translateX(0);
+        /* Start position */
     }
+
     to {
-        transform: translateX(-200%); /* End position (based on duplicated content) */
+        transform: translateX(-200%);
+        /* End position (based on duplicated content) */
     }
 }
 
 
-/*--------------portfolio--------*/
-#portfolio{
+/* --------------------Portfolio (Scrolling Effect)------------- */
+#portfolio {
     padding: 50px 0;
+    overflow: hidden;
 }
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+
+.work-list {
+    display: flex;
+    animation: scrollPortfolio 20s linear infinite;
+    animation-play-state: running;
     margin-top: 50px;
 }
-.work{
+
+.work-list:hover {
+    animation-play-state: paused;
+}
+
+.work {
+    flex: 0 0 33.3333%;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    margin-right: 20px;
 }
-.work img{
+
+.work img {
     width: 100%;
+    /* Ensures full width of the container */
+    height: 250px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensures images cover the area without distortion */
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
-.layer{
+
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -385,11 +449,13 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s;
 }
-.layer h3{
+
+.layer h3 {
     font-weight: 500;
     margin-bottom: 10px;
 }
-.layer a{
+
+.layer a {
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
@@ -401,13 +467,28 @@ nav ul li a:hover::after{
     border-radius: 50%;
     text-align: center;
 }
-.work:hover img{
+
+.work:hover img {
     transform: scale(1.1);
 }
-.work:hover .layer{
+
+.work:hover .layer {
     height: 100%;
 }
-.btn{
+
+@keyframes scrollPortfolio {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+
+/* Button styles */
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -416,30 +497,36 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: backgroud 0.5s;
-}
-.btn:hover{
+    transition: background 0.5s;
     background: #ff004f;
 }
+
 /*---------------Contact-------------*/
-.contact-left{
+.contact-left {
     flex-basis: 35%;
+    text-align: center;
 }
-.contact-right{
+
+.contact-right {
     flex-basis: 60%;
+    text-align: center;
 }
-.contact-left p{
+
+.contact-left p {
     margin-top: 30px;
 }
-.contact-left p i{
+
+.contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
-.social-icons{
+
+.social-icons {
     margin-top: 30px;
 }
-.social-icons a{
+
+.social-icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -447,19 +534,27 @@ nav ul li a:hover::after{
     display: inline-block;
     transition: transform 0.5s;
 }
-.social-icons a:hover{
+
+.social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
 }
-.btn.btn2{
+
+.btn.btn2 {
     display: inline-block;
     background: #ff004f;
     cursor: pointer;
+    text-align: center;
+    margin: 0;
+
 }
-.contact-right{
+
+.contact-right {
     width: 100%;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -470,13 +565,15 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-.form btn2{
+
+.form btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
 }
-.copyright{
+
+.copyright {
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -484,9 +581,24 @@ form input, form textarea{
     font-weight: 300;
     margin-top: 20px;
 }
-.copyright i{
+
+.copyright i {
     color: #ff004f;
 }
+
+.location-box {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.location-box h3 {
+    color: #ff004f;
+    margin-bottom: 10px;
+}
+
 /*--------------css for small screens----------        background: #ff004f;
         position: fixed;
         top: 0px;
@@ -497,22 +609,26 @@ form input, form textarea{
         z-index: 2;
         transition: right 0.5s ease;
         flex-direction: column;*/
-nav .fa-solid{
+nav .fa-solid {
     display: none;
 }
-@media only screen and (max-width: 600px){
-    .header-text{
+
+@media only screen and (max-width: 600px) {
+    .header-text {
         font-size: 16px;
     }
-    .header-text h1{
+
+    .header-text h1 {
         font-size: 50px;
     }
-    nav .fa-solid{
+
+    nav .fa-solid {
         display: block;
         font-size: 25px;
 
     }
-    nav ul{
+
+    nav ul {
         background: #ff004f;
         position: fixed;
         top: 0px;
@@ -524,43 +640,55 @@ nav .fa-solid{
         transition: right 0.5s ease;
         flex-direction: column;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 35px;
     }
-    nav ul .fa-solid{
+
+    nav ul .fa-solid {
         position: absolute;
         top: 40px;
         left: 25px;
         cursor: pointer;
     }
-    .sub-title{
+
+    .sub-title {
         font-size: 40px;
         font-weight: 600;
         color: #fff;
     }
-    .about-col-1, .about-col-2{
+
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
-    .about-col-1{
+
+    .about-col-1 {
         margin-bottom: 30px;
     }
-    .about-col-2{
+
+    .about-col-2 {
         font-size: 14px;
     }
-    .tab-links{
+
+    .tab-links {
         font-size: 16px;
         margin-right: 20px;
     }
-    .contact-left, .contact-right{
+
+    .contact-left,
+    .contact-right {
         text-align: center;
         flex-basis: 100%;
     }
-    .copyright{
+
+    .copyright {
         font-size: 14px;
     }
 }
-#msg{
+
+#msg {
     color: #61b752;
     margin-top: -40px;
     display: block;

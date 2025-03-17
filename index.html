@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav>
-      <img src="images/logo1.png" class="logo" />
+      <a href="#"><img src="images/logo1.png" class="logo" /></a>
       <ul id="sidemenu">
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -284,6 +284,19 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
           <div class="work">
+            <img src="images/foodies.png" />
+            <div class="layer">
+              <h3>Foodies & Flavoroso</h3>
+              <p>
+                A Django-based restaurant management system that allows users to browse the menu, 
+                place orders, make bookings, and manage their profile. It includes an admin interface for managing menu items, 
+                a 'Dish of the Day' feature, and the ability to assign roles (Manager, Delivery Crew). 
+                This project also integrates user authentication using Djoser for registration, login, and role-based access.
+              </p>
+              <a href="https://vamshiachavelli.pythonanywhere.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
             <img src="images/work11.jpeg" />
             <div class="layer">
               <h3>Market Place for Students</h3>
@@ -293,7 +306,7 @@
                 website professors have acess to remove or delet user in groups
                 and resctrict permently.
               </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/vamshiachavelli/Market_Place"  target="_blank"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
           <div class="work">
@@ -306,7 +319,7 @@
                 Various studies have suggested that around 20% of all road
                 accidents are fatigue-related, up to 50% on certain roads.
               </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/vamshiachavelli/Driver-Drowsiness-Detection-CNN"  target="_blank"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
           <div class="work">
@@ -319,11 +332,10 @@
                 detect pneumonia using neural networks and compare their
                 results.papers with the same data set Chest X-ray are studied.
               </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://type.link/vamshiachavelli"  target="_blank"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
         </div>
-        <a href="#" class="btn">see more</a>
       </div>
     </div>
     <!------------------contact----------------->
@@ -338,7 +350,7 @@
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=vachavelli@gmail.com&su=Portfolio&body="
                 target="_blank"
                 >vachavelli@gmail.com</a
-              >
+              ><a href="mailto:vachavelli@gmail.com"></a>
             </p>
             <p>
               <i class="fa-brands fa-linkedin"></i>
@@ -348,11 +360,16 @@
                 >vamshi-achavelli</a
               >
             </p>
-            <p><i class="fa-solid fa-phone"></i> 817-366-7396</p>
-            <div class="social-icons">
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <div class="location-box">
+              <h3>My Location</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d134348.62898787022!2d-96.87043171328124!3d32.82058686516805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f75c7d4b27%3A0x7cd7f53c9e6432df!2sDallas%2C%20TX!5e0!3m2!1sen!2sus!4v1710609092435"
+                width="80%"
+                height="200"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
             <a href="images/Vamshi_Achavelli_CV.docx" download class="btn btn2"
               >Download CV</a
@@ -369,7 +386,7 @@
               />
               <textarea
                 name="Message"
-                rows="6"
+                rows="12"
                 placeholder="Your Message"
               ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
@@ -437,5 +454,19 @@
         clone.forEach((card) => servicesList.appendChild(card)); // Append clones
       });
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const workList = document.querySelector(".work-list");
+        const works = [...workList.children];
+
+        // Duplicate items twice for a smooth looping effect
+        for (let i = 0; i < 2; i++) {  
+            works.forEach((work) => {
+                const clone = work.cloneNode(true);
+                workList.appendChild(clone);
+            });
+        }
+      });
+    </script>    
   </body>
 </html>
